@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    line-height: 2;
+    user-select: none;
+}
+
+:root {
+    --accent: #ffb700;
+}
+
+body {
+    background: linear-gradient(45deg, #050505, #252525);
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--accent);
+    justify-content: space-between;
+}
+
+.navLeft,
+.navRight {
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.logoImg:hover {
+    transform: scale(.95);
+}
+
+.navItem {
+    margin-left: 32px;
+    transition: 300ms;
+    padding-bottom: 5px;
+}
+
+.navItem:hover {
+    box-shadow: 0 2px white;
+}
+
+.settingsIcon {
+    margin-right: 28px;
+    padding: 8px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.settingsIcon:hover {
+    background: #fff3;
+    border-radius: 4px;
+}
+
+#labImg {
+    width: 45vw;
+    border-radius: 8px;
+    position: absolute;
+    opacity: 0.5;
+    transition: 300ms;
+}
+
+#labImg.active {
+    left: 150px;
+    top: 200px;
+    z-index: 4;
+    opacity: 1;
+    transition: 300ms;
+}
+
+#labImgHolder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#holderRight {
+    padding: 12px;
+    border-radius: 4px;
+    background: #fff4;
+    width: 40%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-title {
+    font-size: 28px;
+    border-bottom: 2px solid;
+    margin-bottom: 8px;
+}
+
+.content-text {
+    font-weight: 300;
+}
+
+.directions {
+    display: flex;
+    align-items: center;
+}
+
+.content-directions {
+    margin-top: 18px;
+}
+
+.locationIcon {
+    margin-right: 12px;
+}
+
+#signupHolder {
+    margin: 1px;
+    margin-top: 20px;
+    background: #fff4;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+#helpHolder {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+#helpHolder:hover {
+    background: #fff3;
+}
+
+@keyframes swapIn {
+    from {
+        top: 100px;
+        left: 10px;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    to {
+        top: 200px;
+        left: 150px;
+        opacity: 1;
+        z-index: 4;
+    }
+}
+
+@keyframes swapOut {
+    from {
+        top: 200px;
+        left: 150px;
+        opacity: 1;
+        z-index: 4;
+    }
+    to {
+        top: 100px;
+        left: 10px;
+        opacity: 0.5;
+        z-index: -1;
+    }
+}
+
+#labImg.active {
+    animation: swapIn 1.5s 1;
+}
+
+#labImg.inactive {
+    animation: swapOut 1.5s 1;
+}
+
+#windowCloser {
+    display: none;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0007;
+    position: fixed;
+}
+
+#windowCloser.active {
+    display: block;
+}
+
+#toolWindow {
+    display: none;
+    z-index: 6;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    width: 97vw;
+}
+
+#toolWindow.active {
+    display: block;
+}
+
+.item {
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.item:hover {
+    background: #fff4;
+}

@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GEC Esports </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/src/img/icon.png">
+    <link rel="stylesheet" href="/src/css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="/src/script/index.js" defer></script>
 </head>
-<body>
-    <nav id="navBar"> 
-        <div class="navTitle"> GEC ESPORTS </div>
-        <a class="navItem" href="#"> About Us </a>
-        <a class="navItem" href="#"> Socials </a>
-        <a class="navItem" href="/signup.html"> Signup </a>
-        <a class="navItem" href="#"> Team Roster </a>
-    </nav>
 
-    <div id="section"> 
-        <div class="section-header"> Welcome! </div>
-        <div class="section-body"> This is the Genesee Early College Esports Team. 
-            We strive to build each other up and work on social skills while also having fun playing competitively. If you are a GEC student and would like to join, please sign up <a href="/signup.html" class="formLink"> here. </a></div>
+<body>
+
+    <div id="navBar">
+        <div class="navLeft">
+            <img src="/src/img/icon.png" class="logoImg" width="60px">
+            <a href="#" class="navItem"> About </a>
+            <a href="/signup.html" class="navItem"> Team Signup </a>
+            <a href="#" class="navItem"> Roster </a>
+            <a href="#" class="navItem"> Competitions </a>
+        </div>
+
+        <div class="navRight">
+            <span class="settingsIcon material-icons"> settings </span>
+        </div>
+    </div>
+
+    <div id="labImgHolder">
+        <div class="holderLeft">
+            <img src="/src/img/lab_1.png" id="labImg" class="lab-100 inactive" onclick="switchImg()">
+            <img src="/src/img/lab_2.png" id="labImg" class="lab-200 active" onclick="switchImg()">
+        </div>
+
+        <div id="holderRight">
+            <div class="content-title"> State of the Art Esports Lab </div>
+            <div class="content-text"> GEC has made a very lucrative deal with the University of Michigan's ITS Staff, so now we are able to use the Esports Lab over at Riverfront on the second floor. All Club Meetings/Activities will be held there. </div>
+            <div class="content-directions">
+                <a class="directions" href="https://www.google.com/maps/place/Riverfront+Center+Residence+Hall/@43.0173762,-83.6931809,18.84z/data=!3m1!5s0x88238215f6991841:0x58b7ae922bbf966a!4m5!3m4!1s0x8823821689035e5b:0x2bea95465ca0402c!8m2!3d43.017759!4d-83.6928582">
+                    <span class="material-icons"> location_on </span> Riverfront -- Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="signupHolder">
+        <div class="content-title"> Interested? Join Us! </div>
+        <div class="content-text"> We're open to all who want to join as long as you meet the requirements :) <br> Join us
+            <a href="/signup.html" class="mainLink"> here</a>.
+        </div>
+    </div>
+
+    <div id="helpHolder">
+        <span class="infoIcon material-icons-outlined"> info </span>
+    </div>
+
+    <div id="windowCloser"> </div>
+
+    <div id="toolWindow">
+        <div class="content-title"> Copyrights </div>
+        <div class="copyright"> ©DecipherDev 2021-2022, All Rights Reserved </div>
+        <div class="copyright"> Photos from @UMF_Esports on Twitter </div>
+        <div class="item material-icons"> close </div>
     </div>
 
 </body>
+
 </html>
