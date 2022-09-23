@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Signup | GEC Esports </title>
+    <title> Competitions | GEC Esports </title>
     <link rel="icon" href="/src/img/icon.png">
     <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/loader.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="/src/script/index.js"></script>
 </head>
 
 <body>
@@ -20,9 +22,9 @@
             <a href="/index.html">
                 <img src="/src/img/icon.png" class="logoImg" width="60px"></a>
             <a href="/about-us.html" class="navItem"> About </a>
-            <a href="/signup.html" class="navItem active"> Team Signup </a>
+            <a href="/signup.html" class="navItem"> Team Signup </a>
             <a href="#" class="navItem"> Roster </a>
-            <a href="/competitions.html" class="navItem"> Competitions </a>
+            <a href="/competitions.html" class="navItem active"> Competitions </a>
         </div>
 
         <div class="navRight">
@@ -31,17 +33,15 @@
     </div>
 
     <div id="mainContent">
-        <div class="content-title"> Signup Form </div>
-        <div class="content-text"> Our club requires that you...
-            <ul>
-                <li> A. Are a GEC Student</li>
-                <li> B. Have a ride home </li>
-                <li> C. Know a small amount on how to play games </li>
-                <li> D. Want to have fun and learn about the strategies of teamwork </li>
-            </ul>
-            If you meet all of these requirements, you are eligible to join our club! Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7kpm2V9cGOtz44IrICRxsTES94gLZUD8BTQ4AgZ_UwJ9PcQ/viewform?usp=sf_link" class="mainLink"> here.</a>
-            <br>Remember that in the lab, we do have keyboards and mice, and you are welcome to bring your own. If you would like to play with a controller, I suggest you bring your own. We also suggest bringing a snack, because once you're there, you're
-            there for a few hours. Before we go to the lab to meet/game, we will meet in {}'s class at 3:05 before to brief on what's happening that day.
+        <div class="content-title"> Competitions</div>
+        <div class="content-text">
+            <div id="loader" class="active">
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loaderText"> Cleaning up... </div>
+            </div>
         </div>
     </div>
 
