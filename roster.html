@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> About | GEC Esports </title>
+    <title> Competitions | GEC Esports </title>
     <link rel="icon" href="/src/img/icon.png">
     <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/loader.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="/src/script/index.js"></script>
 </head>
 
 <body>
@@ -19,10 +21,10 @@
         <div class="navLeft">
             <a href="/index.html">
                 <img src="/src/img/icon.png" class="logoImg" width="60px"></a>
-            <a href="#" class="navItem active"> About </a>
+            <a href="/about-us.html" class="navItem"> About </a>
             <a href="/signup.html" class="navItem"> Team Signup </a>
-            <a href="/roster.html" class="navItem"> Roster </a>
-            <a href="/competitions.html" class="navItem"> Competitions </a>
+            <a href="#" class="navItem"> Roster </a>
+            <a href="/competitions.html" class="navItem active"> Competitions </a>
         </div>
 
         <div class="navRight">
@@ -31,17 +33,23 @@
     </div>
 
     <div id="mainContent">
-        <div class="content-title"> About Us </div>
-        <div class="content-text" style="line-height: 2.5;"> GEC Esports was founded in 2021 by Walter Robison in partnership with the University of Michigan-Flint ITS Head, Jason Gooding. We started out with a relatively small number: seven. However, soon enough, word about Esports got around, and others
-            started to tag along as well. <br> We currently offer the games Valorant, Apex Legends, Overwatch (2), and Rocket League. All teams have a specified size, including the team leader. <br> We play competitively, if that's what you're into. But
-            if you want a more casual approach, we also just play games in the club room.
+        <div class="content-title"> Competitions</div>
+        <div class="content-text">
+            <div id="loader" class="active">
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="loaderText"> Cleaning up... </div>
+            </div>
         </div>
+    </div>
 
-        <div id="helpHolder">
-            <span class="infoIcon material-icons-outlined"> info </span>
-        </div>
+    <div id="helpHolder">
+        <span class="infoIcon material-icons-outlined"> info </span>
+    </div>
 
-        <!-- <div id="bottomHolder">
+    <!-- <div id="bottomHolder">
         <div class="copyright"> ©DecipherDev 2021-2022, All Rights Reserved </div>
         <div class="copyright"> Photos from @UMF_Esports on Twitter </div>
     </div> -->
