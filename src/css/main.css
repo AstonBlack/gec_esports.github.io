@@ -151,32 +151,29 @@ a {
     background: #fff3;
 }
 
-#windowCloser {
-    display: none;
-    z-index: 5;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: #0007;
-    position: fixed;
-}
-
-#windowCloser.active {
-    display: block;
-}
-
 #toolWindow {
     display: none;
     z-index: 6;
-    position: absolute;
-    top: 30px;
-    left: 15px;
-    width: 97vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0007;
+    justify-content: center;
+    align-items: center;
 }
 
 #toolWindow.active {
-    display: block;
+    display: flex;
+}
+
+.toolWindowInner {
+    background: #303030;
+    padding: 12px;
+    border-radius: 4px;
+    border-bottom: 5px solid var(--accent);
+    width: 600px;
 }
 
 .item {
@@ -189,4 +186,10 @@ a {
 
 .item:hover {
     background: #fff4;
+}
+
+.closeHolder {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }

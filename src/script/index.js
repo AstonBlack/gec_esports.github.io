@@ -12,3 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".loaderText").classList.add('active');
     }, 1800)
 })
+
+function toggleWindow() {
+    document.getElementById("toolWindow").classList.toggle("active");
+}
