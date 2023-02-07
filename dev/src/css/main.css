@@ -80,15 +80,44 @@ a {
     align-items: center;
 }
 
-.lab-header {
+.section-header {
     font-size: 64px;
     font-weight: 800;
 }
 
-.lab-desc {
+.section-desc {
     color: #fff8;
 }
 
 #carousel {
     overflow: hidden;
+}
+
+#sectionList {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section {
+    padding: 32px;
+    border-radius: 8px;
+    background: #322200;
+    max-width: 900px;
+    max-height: 800px;
+    margin-top: 15%;
+}
+
+.head.section {
+    margin-top: 25%;
+}
+
+a.socialItem {
+    background: #332201;
+    padding: 12px;
+    margin: 4px;
+    border-radius: 4px;
 }
